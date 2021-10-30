@@ -6,7 +6,6 @@ def ask_age():
     Age = input("what is your age? ") 
     return Age
 
-
 def ask_address():
     Address = input("what is your address? ") 
     return Address
@@ -21,4 +20,4 @@ Age = ask_age()
 
 Address = ask_address()
 
-display(Name, Age , Address)
+display(Name, Age, Address)
