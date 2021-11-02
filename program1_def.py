@@ -1,23 +1,23 @@
 def ask_name():
-    Name = input("what is your name? ")
-    return Name
+    _Name = input("what is your name? ")
+    return _Name
 
 def ask_age():
-    Age = input("what is your age? ") 
-    return Age
+    _Age = input("what is your age? ") 
+    return _Age
 
 def ask_address():
-    Address = input("what is your address? ") 
-    return Address
+    _Address = input("what is your address? ") 
+    return _Address
 
-def display(NAME, AGE, ADDRESS):
-   print(f"Hi, my name is {NAME}. I am {AGE} years old and I live in {ADDRESS}.")
+def display(NAMEf, AGEf, ADDRESSf):
+   print(f"Hi, my name is {NAMEf}. I am {AGEf} years old and I live in {ADDRESSf}.")
 
 
-Name = ask_name()
+name = ask_name()
 
-Age = ask_age()
+age = ask_age()
 
-Address = ask_address()
+address = ask_address()
 
-display(Name, Age, Address)
+display(name, age, address)

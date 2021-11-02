@@ -1,16 +1,20 @@
 import math
 
-def fruits_total_price():
-    apple = int(input("How many apples do you want to buy? "))
-    NumberOfApple_X_ApplePrice= apple*20
-    print(f"₱20 X {apple} = ₱{NumberOfApple_X_ApplePrice}")
+def apple_price():
+    ask4_apple = int(input("How many apples do you want to buy? "))
+    return ask4_apple 
 
-    orange = int(input("How many oranges do you want to buy? "))
-    NumberOfOrange_X_OrangePrice= orange*25
-    print(f"₱25 X {orange} = ₱{NumberOfOrange_X_OrangePrice}")
+def orange_price():
+    ask4_orange = int(input("How many oranges do you want to buy? "))
+    return ask4_orange
 
-    total_amount = NumberOfApple_X_ApplePrice + NumberOfOrange_X_OrangePrice
-    print(f"The total amount is ₱{total_amount}.")
+def Display(_Ask_apple , _Ask_orange):
+    Total_calculation = (_Ask_apple * 20) + (_Ask_orange * 25)
+    print(f"The total amount is ₱{Total_calculation}.")
     
 
-fruits_total_price()
+Ask_apple = apple_price()
+Ask_orange = orange_price()
+
+Display(Ask_apple, Ask_orange )
+
